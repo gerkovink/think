@@ -77,6 +77,7 @@ After discussing these questions, each group will write a letter of advice to th
 
 - demonstrate briefly your understanding of the motivation of the actions in the scenario - i.e. I know why they did it!
 - advice on how to improve policy/communication/education at our university to avoid further conflict about this scenario in the future. 
+- any other business that came up in your discussion that you think is important to mention
 
 A good advice here is to focus on what the other party should have done to prevent this scenario, don't focus too much on what should not have been done in the scenario's. If you'd like to focus on a broader class of scenario's - that's fine too.
 
@@ -133,6 +134,7 @@ In this challenge, you will work towards a future-robust grading practice that y
   - argue both the perceived potential for higher/lower learning gains for students, as well as potential for improvement towards the validity of grading of student's work
   - reflect on whether you think that our current learning goals/course aims are still valid in the light of AI tools
   - propose any new assessment methodology or procedure that you think would be more suitable for certain courses, learning goals or allow for fairer grading of student's work
+  - any other business that came up in your discussion that you think is important to mention
   
 You should aim to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices. Perhaps it is helpful to imagine what you would do if you were the Director of Education.
 
@@ -186,12 +188,13 @@ h. Would your answer to the previous question change if you consider the current
 i. Do you think that our university should take action to mitigate the potential negative consequences of using AI tools in education? If so, what actions do you think the university should take?
 j. Do you think that the potential negative consequences of using AI tools in education are being adequately addressed by the university? If not, what do you think the university should do to address these consequences?
 
-**2. After discussing these questions, write a letter to the UU Executive board. In this letter, you should:**
+**2. After discussing these questions, write a letter of advice to the UU Executive board. In this letter, you should:**
 
 a. Start with the potential positive impact of AI tools in society in general and education in particular
 b. Reflect on the potential negative consequences of using AI tools in our institution, highlighting the respective domain impact as discussed in your group
 c. Argue whether you think the university should take action to mitigate these consequences
 d. Propose any actions that you think the university should take to mitigate the potential negative consequences of using AI tools in education
+e. Consider any other business that came up in your discussion that you feel important to mention
 
 Try to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices or lack thereof. Perhaps it is helpful to imagine what you would find most helpful to motivate yourself to act if you were a member of the Executive Board.
 
