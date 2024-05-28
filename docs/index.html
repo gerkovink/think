@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Think Tank UU - Generative AI in Higher Education</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Think Tank UU</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">June 5</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#rules-of-engagement" id="toc-rules-of-engagement" class="nav-link" data-scroll-target="#rules-of-engagement">Rules of Engagement</a></li>
+  <li><a href="#challenges" id="toc-challenges" class="nav-link" data-scroll-target="#challenges">Challenges</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/gerkovink/think/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/think/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Generative AI in Higher Education</h1>
+<p class="subtitle lead">Student Think Tank UU @ June 5, 2024</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Gerko Vink <a href="https://orcid.org/0000-0001-9767-1924" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In the last 3 years, the development of generative artificial intelligence (AI) has taken a steep rise. But AI is no new idea. Ever sinds Alan Turing’s seminal lecture on the automatic computing machine <span class="citation" data-cites="turing">(<a href="#ref-turing" role="doc-biblioref">Turing 2004</a>)</span>, computer scientists have worked towards the realization of artificial intelligence. Even AI chatbots are not new. In 1966,Joseph Weizenbaum developed the <em>psychotherapist chatbot</em> ELIZA <span class="citation" data-cites="eliza">(<a href="#ref-eliza" role="doc-biblioref">Weizenbaum 1966</a>)</span>. I am not going to give an overview of the history of AI, as others have already created a far better overview than I could ever create - see e.g.&nbsp;<a href="https://toloka.ai/blog/history-of-generative-ai/">this link</a>, <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence">Wikipedia</a> or <a href="https://bernardmarr.com/a-simple-guide-to-the-history-of-generative-ai/">this overview</a>. Bottom line, ever since the development of <a href="https://github.com/features/copilot">GitHub Copilot</a> in 2021, the field of generative AI has rapidly become accessible to a broader audience. This development has a direct impact on higher education, as the straightforward access for student and teacher populations to generative AI has the potential to impact education, research and policy. Developments in generative AI also have the means to create new opportunities and - unfortunately - new divides.</p>
+</section>
+<section id="rules-of-engagement" class="level1">
+<h1>Rules of Engagement</h1>
+<p>You may use anything I present to you as input into generative AI tools, with the exeption of using my content and materials for training purposes. This means that you should opt-out of training if you’d like to copy-paste or upload these materials into an AI tool input window.</p>
+<p>Further, you may use AI-generated output during the challenges. But you should redact it and you must take full responsibility for the output’s veracity, correctness and any output you use should be free of IP and copyright infringement. If you’d like a set of suggestions on how to use AI tools in a responsible manner, please look at <a href="https://www.gerkovink.com/ai/policy.html"><em>these suggestions to embed generative AI in Academia</em></a> that I have collected and motivated.</p>
+</section>
+<section id="challenges" class="level1">
+<h1>Challenges</h1>
+<p>In the below panel, I have formulated three challenges for you to collaborate on. The aim of the challenges is to learn from your perspective and insights. I know many people in academia who think, act and work as educators. They approach the challenges presented here from a certain viewpoint, which mostly is related to protecting the status quo. While this can be a good thing, certainly in the short run, I do believe that adopting a more robust frame of mind will eventually lead to better integration of AI tools in our academic activities. I am curious to see how your beliefs, values and experience can contribute to this transition.</p>
+<p>Let’s start.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true">1: No output without input</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">2: Rethinking Grading</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">3: Hidden Impact</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>In this challenge you will write a letter of advice to either students, teachers or the Exam Committee. But before we get into this, I’d like to frame your mind with some additional information.</p>
+<p>First, I recently wrote the text in the below callout box. Please read it.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Do you know your input rights?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>At Utrecht University we hold ethics, honesty, and the values of open science in the highest regard. These principles are the backbone of our academic community and guide our education as well as our pursuit of knowledge.</p>
+<p>Now that AI tools become more advanced and widespread, it is crucial to uphold these values. While much focus has been on the output of AI tools, I want to bring attention to a different concern: the unjust use of what we input into these tools.</p>
+<p>Many of us interact with AI in what feels like the privacy of our own devices. This perceived privacy can create a false sense of security, leading some to input information that was not theirs to share or should have remained confidential. To safeguard our integrity and respect intellectual property rights, we must be cautious about what we share with AI tools. Specifically:</p>
+<ul>
+<li>Do not input assignments, course materials, scientific manuscripts or any other work without explicit permission from the owners.</li>
+<li>Avoid using AI tools to grade or evaluate each other’s work unless you have the author’s consent.</li>
+</ul>
+<p>By following these guidelines, we protect and respect both the creative efforts and the intellectual property in our community.</p>
+</div>
+</div>
+<p>The prime reason for writing this text is that I come across more and more community members that are unaware of the dangers of inputting information into AI tools. I have seen students use AI tools to generate text for assignments that they, teachers use AI tools to grade or provide feedback to student work, and researchers that use AI tools to review scientific manuscripts. While these tools can be very helpful, they can also be very harmful if not used correctly and the perceived privacy of the own device &lt;-&gt; tool interaction may lull the user into a false sense of security.</p>
+<p><span class="citation" data-cites="kumar2023faculty">Kumar (<a href="#ref-kumar2023faculty" role="doc-biblioref">2023</a>)</span> wrote a wonderful case study about a hypothetical professor that used an AI tool to grade student work. The case study highlights many of the issues involved and I can highly recommend reading the publication. While <span class="citation" data-cites="kumar2023faculty">Kumar (<a href="#ref-kumar2023faculty" role="doc-biblioref">2023</a>)</span> focuses on a faculty member, this behavior is not unique to teachers and instructors alike. Students, researchers, and staff members can all fall into the same trap. This challenge will therefore focus on both AI input and output.</p>
+<p>Second, according to our own university’s website, the current education and examination regulations (OER) already provides the right guideline which is also compliant with the introduction of GenAI <span class="citation" data-cites="utrechtuniversityGenerativeAIEducation2024">(<a href="#ref-utrechtuniversityGenerativeAIEducation2024" role="doc-biblioref">Utrecht University 2024b</a>)</span>. This source also reads the following UU-wide policy:</p>
+<blockquote class="blockquote">
+<p>Utrecht University has the following guidelines regarding generative AI (GenAI): Students may use GenAI if the lecturer indicates that this is allowed. The student must follow the rules indicated by the lecturer about the ways in which it may and may not be used and how it should be referenced. Tools are being developed to clarify for lecturers what choices can be made, so that these choices are properly and clearly communicated to students. Students are never allowed to submit work developed entirely by GenAI as their own. If this does happen, it is considered fraud, see the Education and examination regulations (OER) below. Source: <span class="citation" data-cites="utrechtuniversityGenerativeAIEducation2024">Utrecht University (<a href="#ref-utrechtuniversityGenerativeAIEducation2024" role="doc-biblioref">2024b</a>)</span></p>
+</blockquote>
+<p>Now that we have considered these two sources, I would like to present you with the first challenge.</p>
+<section id="definition-of-challenge" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-challenge">Definition of Challenge</h3>
+<p>At Utrecht we hold core scientific values like honesty and opennes in the highest regard <span class="citation" data-cites="utrechtuniversityCodesConductOrganisation2024 knawNederlandseGedragscodeWetenschappelijke2018">(<a href="#ref-utrechtuniversityCodesConductOrganisation2024" role="doc-biblioref">Utrecht University 2024a</a>; <a href="#ref-knawNederlandseGedragscodeWetenschappelijke2018" role="doc-biblioref">KNAW et al. 2018</a>)</span>. Consider this when you read the following two scenarios</p>
+<ol type="1">
+<li><p>A student is aware of <a href="https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)">AI hallucinations</a> and creates <a href="https://openai.com/index/introducing-gpts/">a custom GPT</a> by uploading all relevant course materials, including the reader, articles and book, into an AI tool. Based on these materials, the students also feeds the custom GPT the course assignments, and redacts the generated output to complete the course assignments. The student refers to all the trained materials and hands in the final product under their own name. The teacher grades the material and suspects that the student has used AI tools more comprehensively than the teacher has intended. However, the only communiqué by the teacher was “you can use generative AI”.</p></li>
+<li><p>A teacher uses a generative AI tool to efficiently give feedback to student work and, later in the process, uses AI to grade student work by automatically scoring the assignments with an AI tool. The teacher then grades by hand all the assignments that were AI-graded lower than 6, and randomly selects some of the other assignments to also double check. As a final grade, the students whose work is double-checked by the teacher will always receive the teacher’s grade - even if it is a lower mark. The teacher has not informed the students about the use of AI for grading, nor has the teacher asked for permission to use the tool.</p></li>
+</ol>
+<p>In both scenarios, the Exam Committee has been contacted with a complaint. In scenario 1, the teacher complains about their suspicions of the student’s approach, and in scenario 2 a student has contacted the exam committee with their suspicions about the teacher’s grading approach. Divide your team into 4 groups. Each group will work on one scenario and represent either the teacher/student or the exam committee in the following scheme:</p>
+<ul>
+<li>Group A: Teacher in Scenario 1</li>
+<li>Group B: Exam Committee in Scenario 1</li>
+<li>Group C: Student in Scenario 2</li>
+<li>Group D: Exam Committee in Scenario 2</li>
+</ul>
+<p>Each group will discuss the following questions:</p>
+<ul>
+<li><em>Ethical implications of the two scenarios</em>. What are the potential harms and benefits of using AI in these ways? What are the potential consequences for the student, teacher, and the academic community?</li>
+<li>*Legal implications of the scenario. What are the potential legal consequences for the student, teacher, and the academic community?</li>
+<li><em>Educational implications of the scenario</em>. How do these scenarios affect the learning process? Like before, are there potential consequences for the student, teacher, and the academic community?</li>
+<li><em>Policy implications of the scenario</em>. What are the potential policy changes that could prevent these scenarios from happening in the future? Again, what are the potential consequences for the student, teacher, and the academic community?</li>
+<li>How could the communication between the student, teacher, and the exam committee have been improved to prevent these scenarios from happening in the future?</li>
+</ul>
+<p>After discussing these questions, each group will write a letter of advice to the opposite body. So, if you represent the teacher in scenario 1, you write an advice to the Exam Committee - and vice versa. You letter should</p>
+<ul>
+<li>demonstrate briefly your understanding of the motivation of the actions in the scenario - i.e.&nbsp;I know why they did it!</li>
+<li>advice on how to improve policy/communication/education at our university to avoid further conflict about this scenario in the future.</li>
+</ul>
+<p>A good advice here is to focus on what the other party should have done to prevent this scenario, don’t focus too much on what should not have been done in the scenario’s. If you’d like to focus on a broader class of scenario’s - that’s fine too.</p>
+</section>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>It is hard to deny that AI tools have the potential to revolutionize the way we humans work and learn together. Some people argue that we are currently in a transition phase, where our whole economic system of valuation, skills and merit will transition to a more crafty, creative and human-centered system. Others argue that we are in a phase of automation, where the human touch is lost and the value of human work is diminished. Nevertheless, the use of AI tools in education is a hot topic and the community’s drive for experimentation and innovation is high.</p>
+<p>This means that teachers and students alike are experimenting with AI tools in their daily work. While these tools are argued to potentially become very helpful in the realm of learning <span class="citation" data-cites="roschelleAIFutureLearning2020">(<a href="#ref-roschelleAIFutureLearning2020" role="doc-biblioref">Roschelle, Lester, and Fusco 2020</a>)</span>, signs are coming in that contemporary use may do more damage than good <span class="citation" data-cites="abbasItHarmfulHelpful2024 habibHowDoesGenerative2024 heersminkUseLargeLanguage2024">(<a href="#ref-abbasItHarmfulHelpful2024" role="doc-biblioref">Abbas, Jam, and Khan 2024</a>; <a href="#ref-habibHowDoesGenerative2024" role="doc-biblioref">Habib et al. 2024</a>; <a href="#ref-heersminkUseLargeLanguage2024" role="doc-biblioref">Heersmink 2024</a>)</span>. But this damage may come from the way we use these tools, not from the tools themselves. Perhaps we are trying to fit a square peg into a round hole.</p>
+<p>There is a finite number of options for dealing with generative AI in education. These options translate to the following stages of what I like to call <em>AI grief</em> with respect to validly assessing student performance:</p>
+<ol type="1">
+<li><em>Ignore</em> the existence of generative AI</li>
+<li><em>Forbid</em> the use of generative AI</li>
+<li><em>Circumnavigate</em> generative AI by using offline assessment modes like pen/paper exams or oral exams</li>
+<li><em>Test around</em> the shortcomings of contemporary AI and let students perform tasks that generative AI struggles with</li>
+<li><em>Embrace</em> generative AI and allow it in course work</li>
+<li><em>Rethink</em> the way we assess students and develop new assessment methodologies</li>
+</ol>
+<p>Stages 1 and 2 are not realistic anymore. That ship has sailed. Stage 4 is also not a proper robust way of dealing with AI, because what does not work today may be well-implemented tomorrow. It is reasonable to expect that that in the forseeable future, our grading practice will iterate over stages 3, 5 and 6, where we will see a mix of traditional and AI-allowed assessment.</p>
+<p>In this challenge, I would like to focus on a valid future-robust grading practice. Because the grading process is a crucial part of the learning process - the point where it is evaluated if the student has met the learning goals - it is important to ensure that this process remains valid.</p>
+<section id="definition-of-challenge-1" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-challenge-1">Definition of Challenge</h3>
+<p>In this challenge, you will work towards a future-robust grading practice that you deem fair, valid and reliable.</p>
+<p><strong>1. Do this step individually: Imagine a course that you thoroughly enjoyed and for which you expect that AI would perform well if it were a student.</strong> <a href="https://osiris-student.uu.nl/onderwijscatalogus/extern/cursus">Look it up on Osiris</a>, to be able to fill in the details if necessary. Use the following priming questions to frame your mind:</p>
+<ol type="a">
+<li>What are the learning goals of the course? How do these learning goals translate to the assessment of the course? What assessment methods are used?</li>
+<li>Do you think that the assessment aligns with the learning goals?</li>
+<li>Does your answer for to the previous question change if you consider the use of AI in the assessment? If so, Do you think that theproblem lies with the assessment methods or with the learning goals/aims of the course?</li>
+<li>Do you think that the assesment methods used are vulnerable to the use of AI by students? How would you rank them in terms of vulnerability?</li>
+<li>Do you think that a different assessment method would be more suitable for the learning goals of the course? If so, what method would you propose?</li>
+<li>Were/are you allowed to use AI tools in the coursework of the course? If so, what tools were allowed and what were the rules/limitations? If not, do you believe that students used AI tools anyway?</li>
+<li>Do you see potential benefits of students’ using AI in making the coursework? Do these benefits align with learning goals?</li>
+<li>Can you identify potential harms to the validity of assessment of using AI in making the coursework?</li>
+<li>Would you have liked to be able to use AI in the coursework? Perhaps more freely than allowed? Why or why not?</li>
+<li>Do you think that the current interaction of aims with assessment methods creates inequalities in the student population? If so, how? And do you think that the assessment methods are equally fair to all students?</li>
+<li>Do you see a potential for new assessment methodologies for your course that would fit the course and the student population?</li>
+</ol>
+<p><strong>2. Now with your group, discuss the above, for example by considering the following questions:</strong></p>
+<ol type="a">
+<li>What do you think are the potential benefits for students of using AI to complete coursework?</li>
+<li>What do you think are the potential harms for students of using AI to complete coursework?</li>
+<li>Can you identify assessment modes that are more vulnerable to the use of AI than others?</li>
+<li>Can you identify assessment modes that are not vulnerable to the use of AI?</li>
+<li>What type of learning goals or testing/course aims do you percieve as most vulnerable to the use of AI? For example, writing computer code, writing essays, solving math problems, etc.</li>
+<li>Have you identified any potential inequalities in the student population that arise from the use of AI in coursework?</li>
+<li>Have you identified any assessment methodologies that would alleviate some or all of the percieved issues?</li>
+</ol>
+<p><strong>3. Now, as a group, aggregate your findings and write a letter to the Director of Education. In this letter, you should</strong></p>
+<ul>
+<li>reflect on whether you think AI tools create inequalities with respect to grading of student’s work</li>
+<li>argue both the perceived potential for higher/lower learning gains for students, as well as potential for improvement towards the validity of grading of student’s work</li>
+<li>reflect on whether you think that our current learning goals/course aims are still valid in the light of AI tools</li>
+<li>propose any new assessment methodology or procedure that you think would be more suitable for certain courses, learning goals or allow for fairer grading of student’s work</li>
+</ul>
+<p>You should aim to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices. Perhaps it is helpful to imagine what you would do if you were the Director of Education.</p>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>In the last 3 years, the development of generative artificial intelligence (AI) has taken a steep rise. But AI is no new idea. Ever sinds Alan Turing’s seminal lecture on the automatic computing machine <span class="citation" data-cites="turing">(<a href="#ref-turing" role="doc-biblioref">Turing 2004</a>)</span>, computer scientists have worked towards the realization of artificial intelligence. Even AI chatbots are not new. In 1966, Joseph Weizenbaum developed the <em>psychotherapist chatbot</em> ELIZA <span class="citation" data-cites="eliza">(<a href="#ref-eliza" role="doc-biblioref">Weizenbaum 1966</a>)</span>. I am not going to give an overview of the history of AI, as others have already created a far better overview than I could ever create - see e.g.&nbsp;<a href="https://toloka.ai/blog/history-of-generative-ai/">this link</a>, <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence">Wikipedia</a> or <a href="https://bernardmarr.com/a-simple-guide-to-the-history-of-generative-ai/">this overview</a>. Bottom line, ever since the development of <a href="https://github.com/features/copilot">GitHub Copilot</a> in 2021, the field of generative AI has rapidly become accessible to a broader audience. This development has a direct impact on higher education, as the straightforward access for student and teacher populations to generative AI has the potential to impact education, research and policy. Developments in generative AI also have the means to create new opportunities and - unfortunately - new divides.</p>
+<p>In this challenge, I would like to focus on the hidden impact of AI tools in education. While the use of AI tools in education is often framed as a positive development, there are also negative consequences that are often overlooked.</p>
+<section id="impact" class="level3">
+<h3 class="anchored" data-anchor-id="impact">Impact</h3>
+<p>There are numerous ways that the increasing use and implementations of AI tools may impact our lives. In this section I will discuss some forms of direct and indirect impact of AI tools on human life.</p>
+<section id="ethical-impact" class="level4">
+<h4 class="anchored" data-anchor-id="ethical-impact">Ethical impact</h4>
+<p>Many people are unaware of the ethical implications of using AI tools, apart from presenting AI-generated work as your own product. AI tools are often trained on data that is biased or incomplete, which can lead to biased or incorrect results. AI tools have demonstrated to yield inaccurate, incomplete or false information. This can happen when the AI tool <em>perceives</em> patterns or objects that are nonexistent, resulting in nonsensical or inaccurate output, often referred to as <strong>hallucinations</strong> <span class="citation" data-cites="ziwei alkaissi2023artificial athaluri2023exploring">(<a href="#ref-ziwei" role="doc-biblioref">Ji et al. 2023</a>; <a href="#ref-alkaissi2023artificial" role="doc-biblioref">Alkaissi and McFarlane 2023</a>; <a href="#ref-athaluri2023exploring" role="doc-biblioref">Athaluri et al. 2023</a>)</span>, although some resistance against that term has emerged <span class="citation" data-cites="Ostergaard2023">(<a href="#ref-Ostergaard2023" role="doc-biblioref">Østergaard and Nielbo 2023</a>)</span>. It is important to always use multiple sources to verify any bit of information. As a user of AI tools you should accept that only you are responsible for using, interpreting and curating AI-generated output.</p>
+<p>The age-old adage <em>garbage in, garbage out</em> holds here too: old biases and ideas may unwantedly be perpetuated by AI tools, thereby fueling divides, biases and stereotypes that we have tried so hard to remove.</p>
+</section>
+<section id="legal-impact" class="level4">
+<h4 class="anchored" data-anchor-id="legal-impact">Legal impact</h4>
+<p>Many people are unaware of the legal implications of using AI tools. AI tools are often trained on data that is copyrighted or patented, which can lead to legal issues if the data is used without permission. To avoid such issues, when interacting with AI tools, users should protect intellectual property rights and copyright. When submitting prompts as <strong>input to AI tools</strong> it is paramount to ensure that</p>
+<ul>
+<li>you are allowed to share the information in the prompt or have explicit permission</li>
+<li>you are not infringing on any right associated with the information in the prompt</li>
+</ul>
+<p>Likewise, it is important to realize that no intellectual property or copyright may be infringed with using the <strong>output of the AI tool</strong>. The training of the AI tool happened on a large set of data; some of that data may have been used illegitimately. By using AI generated output you may plagiarize existing work or otherwise infringe on intellectual property rights.</p>
+<p>This is a tricky scenario, as the nontransparent training of AI tools makes it challenging to prove that no IP is infringed with the realized output. However, one could argue that embedding AI tools in a normal scientific knowledge discovery scenario would minimize the change of any infringement. Such a route would result in a process where information from multiple sources is processed and curated by an actual human.</p>
+</section>
+<section id="environmental-impact" class="level4">
+<h4 class="anchored" data-anchor-id="environmental-impact">Environmental impact</h4>
+<p>Many users are unaware of the impact that contemporary AI tools may have on the environment. Together with e.g.&nbsp;cloud storage and e-mail traffic, AI tools constitute a <em>hidden carbon footprint</em> that often escapes our awareness. While it is not as apparent as airline travel, the impact of using AI tools may be far greater than you think and decarbonizing the energy usage alone is not enough to sustainably implement AI tools in our everyday life <span class="citation" data-cites="berthelot2023">(<a href="#ref-berthelot2023" role="doc-biblioref">Berthelot et al. 2024</a>)</span>. It is estimated that using generative AI Tools currently accounts for up to 25 times the energy emissions that are generated from training the models <span class="citation" data-cites="chien2023">(<a href="#ref-chien2023" role="doc-biblioref">Chien et al. 2023</a>)</span>. While the environmental impact can ultimately be significantly lowered by moving from server-based generative AI to on-chip generative AI, there will always be a cost of using AI tools. Many people have thought about how AI will impact human life and Hollywood has monetized its threat to human existence. Not many may have realized that our lives may currently be at risk through AI-induced global warming.</p>
+</section>
+<section id="social-impact" class="level4">
+<h4 class="anchored" data-anchor-id="social-impact">Social impact</h4>
+<p>In recent years many idealistic promises have been made about the potential of AI to improve human life. Widespread access for everyone to AI models and tools has been said to contribute to equality, allowing everybody to access high quality information and interact witht the same technology. This widespread access, however, also allows for non-just purposes. AI tools are neutral and can be used to harm people and spread misinformation. AI tools can be used to manipulate people, to deepen existing biases, to incite hate speech or to discriminate against people, evidence of which has been found in the use of AI tools in hiring processes and the potential for election manipulation <span class="citation" data-cites="baldassarre2023 lyttonAIHiringTools2024 aliswensonElectionDisinformationTakes2024 mekelapanditharatneHowAIPuts2023">(<a href="#ref-baldassarre2023" role="doc-biblioref">Baldassarre et al. 2023</a>; <a href="#ref-lyttonAIHiringTools2024" role="doc-biblioref">Lytton 2024</a>; <a href="#ref-aliswensonElectionDisinformationTakes2024" role="doc-biblioref">Ali Swenson and Kelvin Chan 2024</a>; <a href="#ref-mekelapanditharatneHowAIPuts2023" role="doc-biblioref">Mekela Panditharatne and Noah Giansiracusa 2023</a>)</span>. Aside from the potential for AI to incite societal harm on a fundamental level, it can also disrupt society on a more existential level. The widespread use of AI tools may lead to a loss of jobs, as AI tools can automate tasks that were previously done by humans. This can lead to a loss of income and a decrease in the quality of life for many people. The zeitgeist of contemporary AI tools pairs a strong call for regulatory action with a warning for over-regulation.</p>
+</section>
+<section id="human-rights-and-labor-rights" class="level4">
+<h4 class="anchored" data-anchor-id="human-rights-and-labor-rights">Human rights and labor rights</h4>
+<p>There is <a href="https://time.com/6247678/openai-chatgpt-kenya-workers/">evidence</a> that the workers who curate these models are treated unfairly or even inhumanely by their employers. This <a href="https://blogs.lse.ac.uk/businessreview/2024/03/25/madhumita-murgia-ai-can-do-harm-when-people-dont-have-a-voice/">interview</a> also paints a good picture of how and where AI work can harm people. This means that the use of AI tools may not only effect the networks of the people who use them, but also have an effect on the people who curate the models behind these tools.</p>
+</section>
+</section>
+<section id="definition-of-challenge-2" class="level3">
+<h3 class="anchored" data-anchor-id="definition-of-challenge-2">Definition of Challenge</h3>
+<p>In this challenge I would like to invite you to reflect on the hidden impact of AI tools in higher education. The aim of this challenge is to raise awareness of the potential negative consequences of using AI tools in education and to encourage you to think critically about the ethical, legal, environmental, social, and human rights implications of using AI tools.</p>
+<p><strong>1. Discuss the above impact domains in your group. Let the following talking points guide your discussion.</strong></p>
+<ol type="a">
+<li>Where do you see potential in your daily work for AI tools to have either a positive or a negative impact on your life?</li>
+<li>How do you think AI tools can be used to improve your daily work?</li>
+<li>Do you think that AI tools can be used to harm people or spread misinformation? Do you have examples of that happening?</li>
+<li>Do you use AI tools in your daily work? Why do you (not) use them?</li>
+<li>Are there ways to mitigate the above outlined potential negative consequences of using AI tools in your daily work?</li>
+<li>Do you feel that the responsibility of mitigating the potential negative consequences of using AI tools lies with the individual user, the organization, or the government?</li>
+<li>Do you feel that the positive benefits of AI tools outweigh the potential negative consequences?</li>
+<li>Would your answer to the previous question change if you consider the current state of AI tools als a transition phase to a more advanced state where all negative impact is mitigated?</li>
+<li>Do you think that our university should take action to mitigate the potential negative consequences of using AI tools in education? If so, what actions do you think the university should take?</li>
+<li>Do you think that the potential negative consequences of using AI tools in education are being adequately addressed by the university? If not, what do you think the university should do to address these consequences?</li>
+</ol>
+<p><strong>2. After discussing these questions, write a letter to the UU Executive board. In this letter, you should:</strong></p>
+<ol type="a">
+<li>Start with the potential positive impact of AI tools in society in general and education in particular</li>
+<li>Reflect on the potential negative consequences of using AI tools in our institution, highlighting the respective domain impact as discussed in your group</li>
+<li>Argue whether you think the university should take action to mitigate these consequences</li>
+<li>Propose any actions that you think the university should take to mitigate the potential negative consequences of using AI tools in education</li>
+</ol>
+<p>Try to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices or lack thereof. Perhaps it is helpful to imagine what you would find most helpful to motivate yourself to act if you were a member of the Executive Board.</p>
+</section>
+</div>
+</div>
+</div>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-abbasItHarmfulHelpful2024" class="csl-entry" role="listitem">
+Abbas, Muhammad, Farooq Ahmed Jam, and Tariq Iqbal Khan. 2024. <span>“Is It Harmful or Helpful? <span>Examining</span> the Causes and Consequences of Generative <span>AI</span> Usage Among University Students.”</span> <em>International Journal of Educational Technology in Higher Education</em> 21 (1): 10. <a href="https://doi.org/10.1186/s41239-024-00444-7">https://doi.org/10.1186/s41239-024-00444-7</a>.
+</div>
+<div id="ref-aliswensonElectionDisinformationTakes2024" class="csl-entry" role="listitem">
+Ali Swenson, and Kelvin Chan. 2024. <span>“Election Disinformation Takes a Big Leap with <span>AI</span> Being Used to Deceive Worldwide.”</span> <em>AP News</em>. https://apnews.com/article/artificial-intelligence-elections-disinformation-chatgpt-bc283e7426402f0b4baa7df280a4c3fd.
+</div>
+<div id="ref-alkaissi2023artificial" class="csl-entry" role="listitem">
+Alkaissi, Hussam, and Samy I McFarlane. 2023. <span>“Artificial Hallucinations in <span>ChatGPT</span>: Implications in Scientific Writing.”</span> <em>Cur<span>ē</span>us</em> 15 (2).
+</div>
+<div id="ref-athaluri2023exploring" class="csl-entry" role="listitem">
+Athaluri, Sai Anirudh, Sandeep Varma Manthena, VSR Krishna Manoj Kesapragada, Vineel Yarlagadda, Tirth Dave, and Rama Tulasi Siri Duddumpudi. 2023. <span>“Exploring the Boundaries of Reality: Investigating the Phenomenon of Artificial Intelligence Hallucination in Scientific Writing Through <span>ChatGPT</span> References.”</span> <em>Cur<span>ē</span>us</em> 15 (4).
+</div>
+<div id="ref-baldassarre2023" class="csl-entry" role="listitem">
+Baldassarre, Maria Teresa, Danilo Caivano, Berenice Fernandez Nieto, Domenico Gigante, and Azzurra Ragone. 2023. <span>“The Social Impact of Generative <span>AI</span>: <span>An</span> Analysis on <span>ChatGPT</span>.”</span> In <em>Proceedings of the 2023 <span>ACM</span> Conference on Information Technology for Social Good</em>, 363–73. <span>GoodIT</span> ’23. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3582515.3609555">https://doi.org/10.1145/3582515.3609555</a>.
+</div>
+<div id="ref-berthelot2023" class="csl-entry" role="listitem">
+Berthelot, Adrien, Eddy Caron, Mathilde Jay, and Laurent Lefèvre. 2024. <span>“Estimating the Environmental Impact of <span>Generative-AI</span> Services Using an <span class="nocase">LCA-based</span> Methodology.”</span> In <em><span>CIRP LCE</span> 2024 - 31st Conference on Life Cycle Engineering</em>, 1–10. Turin, Italy.
+</div>
+<div id="ref-chien2023" class="csl-entry" role="listitem">
+Chien, Andrew A, Liuzixuan Lin, Hai Nguyen, Varsha Rao, Tristan Sharma, and Rajini Wijayawardana. 2023. <span>“Reducing the Carbon Impact of Generative <span>AI</span> Inference (Today and in 2035).”</span> In <em>Proceedings of the 2nd Workshop on Sustainable Computer Systems</em>. <span>HotCarbon</span> ’23. New York, NY, USA: Association for Computing Machinery. <a href="https://doi.org/10.1145/3604930.3605705">https://doi.org/10.1145/3604930.3605705</a>.
+</div>
+<div id="ref-habibHowDoesGenerative2024" class="csl-entry" role="listitem">
+Habib, Sabrina, Thomas Vogel, Xiao Anli, and Evelyn Thorne. 2024. <span>“How Does Generative Artificial Intelligence Impact Student Creativity?”</span> <em>Journal of Creativity</em> 34 (1): 100072. <a href="https://doi.org/10.1016/j.yjoc.2023.100072">https://doi.org/10.1016/j.yjoc.2023.100072</a>.
+</div>
+<div id="ref-heersminkUseLargeLanguage2024" class="csl-entry" role="listitem">
+Heersmink, Richard. 2024. <span>“Use of Large Language Models Might Affect Our Cognitive Skills.”</span> <em>Nature Human Behaviour</em>, March, 1–2. <a href="https://doi.org/10.1038/s41562-024-01859-y">https://doi.org/10.1038/s41562-024-01859-y</a>.
+</div>
+<div id="ref-ziwei" class="csl-entry" role="listitem">
+Ji, Ziwei, Nayeon Lee, Rita Frieske, Tiezheng Yu, Dan Su, Yan Xu, Etsuko Ishii, Ye Jin Bang, Andrea Madotto, and Pascale Fung. 2023. <span>“Survey of Hallucination in Natural Language Generation.”</span> <em>Acm Computing Surveys</em> 55 (12). <a href="https://doi.org/10.1145/3571730">https://doi.org/10.1145/3571730</a>.
+</div>
+<div id="ref-knawNederlandseGedragscodeWetenschappelijke2018" class="csl-entry" role="listitem">
+KNAW, NFU, NWO, TO2-Federatie, Vereniging Hogescholen, and VSNU. 2018. <span>“<span>Nederlandse gedragscode wetenschappelijke integriteit</span>.”</span> <span>Data Archiving and Networked Services (DANS)</span>. <a href="https://doi.org/10.17026/DANS-2CJ-NVWU">https://doi.org/10.17026/DANS-2CJ-NVWU</a>.
+</div>
+<div id="ref-kumar2023faculty" class="csl-entry" role="listitem">
+Kumar, Rahul. 2023. <span>“Faculty Members’ Use of Artificial Intelligence to Grade Student Papers: A Case of Implications.”</span> <em>International Journal for Educational Integrity</em> 19 (1): 9.
+</div>
+<div id="ref-lyttonAIHiringTools2024" class="csl-entry" role="listitem">
+Lytton, Charlotte. 2024. <span>“<span>AI</span> Hiring Tools May Be Filtering Out the Best Job Applicants.”</span> https://www.bbc.com/worklife/article/20240214-ai-recruiting-hiring-software-bias-discrimination.
+</div>
+<div id="ref-mekelapanditharatneHowAIPuts2023" class="csl-entry" role="listitem">
+Mekela Panditharatne, and Noah Giansiracusa. 2023. <span>“How <span>AI Puts Elections</span> at <span>Risk</span> — <span>And</span> the <span>Needed Safeguards</span> <span></span> <span>Brennan Center</span> for <span>Justice</span>.”</span> https://www.brennancenter.org/our-work/analysis-opinion/how-ai-puts-elections-risk-and-needed-safeguards.
+</div>
+<div id="ref-Ostergaard2023" class="csl-entry" role="listitem">
+Østergaard, Søren Dinesen, and Kristoffer Laigaard Nielbo. 2023. <span>“False Responses from Artificial Intelligence Models Are Not Hallucinations.”</span> <em>Schizophrenia Bulletin</em> 49 (5): 1105–7. <a href="https://doi.org/10.1093/schbul/sbad068">https://doi.org/10.1093/schbul/sbad068</a>.
+</div>
+<div id="ref-roschelleAIFutureLearning2020" class="csl-entry" role="listitem">
+Roschelle, Jeremy, James Lester, and Judi Fusco. 2020. <span>“<span>AI</span> and the <span>Future</span> of <span>Learning</span>: <span>Expert Panel Report</span>.”</span> <em>Digital Promise</em>. Digital Promise.
+</div>
+<div id="ref-turing" class="csl-entry" role="listitem">
+Turing, Alan. 2004. <span>“Lecture on the Automatic Computing Engine (1947).”</span> In <em>The Essential Turing</em>. Oxford University Press. <a href="https://doi.org/10.1093/oso/9780198250791.003.0015">https://doi.org/10.1093/oso/9780198250791.003.0015</a>.
+</div>
+<div id="ref-utrechtuniversityCodesConductOrganisation2024" class="csl-entry" role="listitem">
+Utrecht University. 2024a. <span>“Codes of Conduct - <span>Organisation</span> - <span>Utrecht University</span>.”</span> https://www.uu.nl/en/organisation/about-us/codes-of-conduct.
+</div>
+<div id="ref-utrechtuniversityGenerativeAIEducation2024" class="csl-entry" role="listitem">
+———. 2024b. <span>“Generative <span>AI</span> - <span>Education</span> - <span>Utrecht University</span>.”</span> https://www.uu.nl/en/education/education-at-uu/teaching/generative-ai.
+</div>
+<div id="ref-eliza" class="csl-entry" role="listitem">
+Weizenbaum, Joseph. 1966. <span>“<span>ELIZA</span>—a Computer Program for the Study of Natural Language Communication Between Man and Machine.”</span> <em>Communications of The Acm</em> 9 (1): 36–45. <a href="https://doi.org/10.1145/365153.365168">https://doi.org/10.1145/365153.365168</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/gerkovink/think/edit/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/gerkovink/think/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -1,0 +1,198 @@
+---
+title: "Generative AI in Higher Education"
+subtitle: "Student Think Tank UU @ June 5, 2024"
+authors:
+  - name: "Gerko Vink"
+    orcid: "0000-0001-9767-1924"
+editor: source
+---
+
+# Introduction
+In the last 3 years, the development of generative artificial intelligence (AI) has taken a steep rise. But AI is no new idea. Ever sinds Alan Turing's seminal lecture on the automatic computing machine [@turing], computer scientists have worked towards the realization of artificial intelligence. Even AI chatbots are not new. In 1966,Joseph Weizenbaum developed the *psychotherapist chatbot* ELIZA [@eliza]. I am not going to give an overview of the history of AI, as others have already created a far better overview than I could ever create - see e.g. [this link](https://toloka.ai/blog/history-of-generative-ai/), [Wikipedia](https://en.wikipedia.org/wiki/Generative_artificial_intelligence) or [this overview](https://bernardmarr.com/a-simple-guide-to-the-history-of-generative-ai/). Bottom line, ever since the development of [GitHub Copilot](https://github.com/features/copilot) in 2021, the field of generative AI has rapidly become accessible to a broader audience. This development has a direct impact on higher education, as the straightforward access for student and teacher populations to generative AI has the potential to impact education, research and policy. Developments in generative AI also have the means to create new opportunities and - unfortunately - new divides.
+
+# Rules of Engagement
+You may use anything I present to you as input into generative AI tools, with the exeption of using my content and materials for training purposes. This means that you should opt-out of training if you'd like to copy-paste or upload these materials into an AI tool input window. 
+
+Further, you may use AI-generated output during the challenges. But you should redact it and you must take full responsibility for the output's veracity, correctness and any output you use should be free of IP and copyright infringement. If you'd like a set of suggestions on how to use AI tools in a responsible manner, please look at [*these suggestions to embed generative AI in Academia*](https://www.gerkovink.com/ai/policy.html) that I have collected and motivated.
+
+# Challenges
+In the below panel, I have formulated three challenges for you to collaborate on. The aim of the challenges is to learn from your perspective and insights. I know many people in academia who think, act and work as educators. They approach the challenges presented here from a certain viewpoint, which mostly is related to protecting the status quo. While this can be a good thing, certainly in the short run, I do believe that adopting a more robust frame of mind will eventually lead to better integration of AI tools in our academic activities. I am curious to see how your beliefs, values and experience can contribute to this transition. 
+
+Let's start.
+
+::: {.panel-tabset}
+
+## 1: No output without input
+In this challenge you will write a letter of advice to either students, teachers or the Exam Committee. But before we get into this, I'd like to frame your mind with some additional information. 
+
+First, I recently wrote the text in the below callout box. Please read it. 
+
+::: callout-tip
+# Do you know your input rights?
+At Utrecht University we hold ethics, honesty, and the values of open science in the highest regard. These principles are the backbone of our academic community and guide our education as well as our pursuit of knowledge.
+
+Now that AI tools become more advanced and widespread, it is crucial to uphold these values. While much focus has been on the output of AI tools, I want to bring attention to a different concern: the unjust use of what we input into these tools.
+
+Many of us interact with AI in what feels like the privacy of our own devices. This perceived privacy can create a false sense of security, leading some to input information that was not theirs to share or should have remained confidential. To safeguard our integrity and respect intellectual property rights, we must be cautious about what we share with AI tools. Specifically:
+
+- Do not input assignments, course materials, scientific manuscripts or any other work without explicit permission from the owners.
+- Avoid using AI tools to grade or evaluate each other's work unless you have the author’s consent.
+
+By following these guidelines, we protect and respect both the creative efforts and the intellectual property in our community.
+:::
+
+The prime reason for writing this text is that I come across more and more community members that are unaware of the dangers of inputting information into AI tools. I have seen students use AI tools to generate text for assignments that they, teachers use AI tools to grade or provide feedback to student work, and researchers that use AI tools to review scientific manuscripts. While these tools can be very helpful, they can also be very harmful if not used correctly and the perceived privacy of the own device <-> tool interaction may lull the user into a false sense of security. 
+
+@kumar2023faculty wrote a wonderful case study about a hypothetical professor that used an AI tool to grade student work. The case study highlights many of the issues involved and I can highly recommend reading the publication. While @kumar2023faculty focuses on a faculty member, this behavior is not unique to teachers and instructors alike. Students, researchers, and staff members can all fall into the same trap. This challenge will therefore focus on both AI input and output. 
+
+Second, according to our own university's website, the current education and examination regulations (OER) already provides the right guideline which is also compliant with the introduction of GenAI [@utrechtuniversityGenerativeAIEducation2024]. This source also reads the following UU-wide policy:
+
+> Utrecht University has the following guidelines regarding generative AI (GenAI): Students may use GenAI if the lecturer indicates that this is allowed. The student must follow the rules indicated by the lecturer about the ways in which it may and may not be used and how it should be referenced. Tools are being developed to clarify for lecturers what choices can be made, so that these choices are properly and clearly communicated to students. Students are never allowed to submit work developed entirely by GenAI as their own. If this does happen, it is considered fraud, see the Education and examination regulations (OER) below. Source: @utrechtuniversityGenerativeAIEducation2024
+
+Now that we have considered these two sources, I would like to present you with the first challenge.
+
+### Definition of Challenge
+At Utrecht we hold core scientific values like honesty and opennes in the highest regard [@utrechtuniversityCodesConductOrganisation2024;@knawNederlandseGedragscodeWetenschappelijke2018]. Consider this when you read the following two scenarios
+
+1. A student is aware of [AI hallucinations](https://en.wikipedia.org/wiki/Hallucination_(artificial_intelligence)) and creates [a custom GPT](https://openai.com/index/introducing-gpts/) by uploading all relevant course materials, including the reader, articles and book, into an AI tool. Based on these materials, the students also feeds the custom GPT the course assignments, and redacts the generated output to complete the course assignments. The student refers to all the trained materials and hands in the final product under their own name. The teacher grades the material and suspects that the student has used AI tools more comprehensively than the teacher has intended. However, the only communiqué by the teacher was "you can use generative AI". 
+
+2. A teacher uses a generative AI tool to efficiently give feedback to student work and, later in the process, uses AI to grade student work by automatically scoring the assignments with an AI tool. The teacher then grades by hand all the assignments that were AI-graded lower than 6, and randomly selects some of the other assignments to also double check. As a final grade, the students whose work is double-checked by the teacher will always receive the teacher's grade - even if it is a lower mark. The teacher has not informed the students about the use of AI for grading, nor has the teacher asked for permission to use the tool. 
+
+In both scenarios, the Exam Committee has been contacted with a complaint. In scenario 1, the teacher complains about their suspicions of the student's approach, and in scenario 2 a student has contacted the exam committee with their suspicions about the teacher's grading approach. Divide your team into 4 groups. Each group will work on one scenario and represent either the teacher/student or the exam committee in the following scheme:
+
+- Group A: Teacher in Scenario 1
+- Group B: Exam Committee in Scenario 1
+- Group C: Student in Scenario 2
+- Group D: Exam Committee in Scenario 2
+
+Each group will discuss the following questions:
+
+- *Ethical implications of the two scenarios*. What are the potential harms and benefits of using AI in these ways? What are the potential consequences for the student, teacher, and the academic community?
+- *Legal implications of the scenario. What are the potential legal consequences for the student, teacher, and the academic community?
+- *Educational implications of the scenario*. How do these scenarios affect the learning process? Like before, are there potential consequences for the student, teacher, and the academic community?
+- *Policy implications of the scenario*. What are the potential policy changes that could prevent these scenarios from happening in the future? Again, what are the potential consequences for the student, teacher, and the academic community?
+- How could the communication between the student, teacher, and the exam committee have been improved to prevent these scenarios from happening in the future? 
+
+After discussing these questions, each group will write a letter of advice to the opposite body. So, if you represent the teacher in scenario 1, you write an advice to the Exam Committee - and vice versa. You letter should 
+
+- demonstrate briefly your understanding of the motivation of the actions in the scenario - i.e. I know why they did it!
+- advice on how to improve policy/communication/education at our university to avoid further conflict about this scenario in the future. 
+
+A good advice here is to focus on what the other party should have done to prevent this scenario, don't focus too much on what should not have been done in the scenario's. If you'd like to focus on a broader class of scenario's - that's fine too.
+
+## 2: Rethinking Grading
+
+It is hard to deny that AI tools have the potential to revolutionize the way we humans work and learn together. Some people argue that we are currently in a transition phase, where our whole economic system of valuation, skills and merit will transition to a more crafty, creative and human-centered system. Others argue that we are in a phase of automation, where the human touch is lost and the value of human work is diminished. Nevertheless, the use of AI tools in education is a hot topic and the community's drive for experimentation and innovation is high.
+
+This means that teachers and students alike are experimenting with AI tools in their daily work. While these tools are argued to potentially become very helpful in the realm of learning [@roschelleAIFutureLearning2020], signs are coming in that contemporary use may do more damage than good [@abbasItHarmfulHelpful2024; @habibHowDoesGenerative2024; @heersminkUseLargeLanguage2024]. 
+But this damage may come from the way we use these tools, not from the tools themselves. Perhaps we are trying to fit a square peg into a round hole.
+
+There is a finite number of options for dealing with generative AI in education. These options translate to the following stages of what I like to call *AI grief* with respect to validly assessing student performance:
+
+1. *Ignore* the existence of generative AI
+2. *Forbid* the use of generative AI
+3. *Circumnavigate* generative AI by using offline assessment modes like pen/paper exams or oral exams
+4. *Test around* the shortcomings of contemporary AI and let students perform tasks that generative AI struggles with
+5. *Embrace* generative AI and allow it in course work
+6. *Rethink* the way we assess students and develop new assessment methodologies
+
+Stages 1 and 2 are not realistic anymore. That ship has sailed. Stage 4 is also not a proper robust way of dealing with AI, because what does not work today may be well-implemented tomorrow.  It is reasonable to expect that that in the forseeable future, our grading practice will iterate over stages 3, 5 and 6, where we will see a mix of traditional and AI-allowed assessment. 
+
+In this challenge, I would like to focus on a valid future-robust grading practice. Because the grading process is a crucial part of the learning process - the point where it is evaluated if the student has met the learning goals - it is important to ensure that this process remains valid.
+
+### Definition of Challenge
+In this challenge, you will work towards a future-robust grading practice that you deem fair, valid and reliable. 
+
+**1. Do this step individually: Imagine a course that you thoroughly enjoyed and for which you expect that AI would perform well if it were a student.** [Look it up on Osiris](https://osiris-student.uu.nl/onderwijscatalogus/extern/cursus), to be able to fill in the details if necessary. Use the following priming questions to frame your mind: 
+
+  a. What are the learning goals of the course? How do these learning goals translate to the assessment of the course? What assessment methods are used?
+  b. Do you think that the assessment aligns with the learning goals? 
+  c. Does your answer for to the previous question change if you consider the use of AI in the assessment? If so, Do you think that theproblem lies with the assessment methods or with the learning goals/aims of the course?
+  d. Do you think that the assesment methods used are vulnerable to the use of AI by students? How would you rank them in terms of vulnerability?
+  e. Do you think that a different assessment method would be more suitable for the learning goals of the course? If so, what method would you propose?
+  f. Were/are you allowed to use AI tools in the coursework of the course? If so, what tools were allowed and what were the rules/limitations? If not, do you believe that students used AI tools anyway?
+  g. Do you see potential benefits of students' using AI in making the coursework? Do these benefits align with learning goals?
+  h. Can you identify potential harms to the validity of assessment of using AI in making the coursework?
+  i. Would you have liked to be able to use AI in the coursework? Perhaps more freely than allowed? Why or why not?
+  j. Do you think that the current interaction of aims with assessment methods creates inequalities in the student population? If so, how? And do you think that the assessment methods are equally fair to all students?
+  k. Do you see a potential for new assessment methodologies for your course that would fit the course and the student population?
+
+**2. Now with your group, discuss the above, for example by considering the following questions:**
+
+  a. What do you think are the potential benefits for students of using AI to complete coursework?
+  b. What do you think are the potential harms for students of using AI to complete coursework?
+  c. Can you identify assessment modes that are more vulnerable to the use of AI than others?
+  d. Can you identify assessment modes that are not vulnerable to the use of AI?
+  e. What type of learning goals or testing/course aims do you percieve as most vulnerable to the use of AI? For example, writing computer code, writing essays, solving math problems, etc. 
+  f. Have you identified any potential inequalities in the student population that arise from the use of AI in coursework?
+  g. Have you identified any assessment methodologies that would alleviate some or all of the percieved issues?
+
+**3. Now, as a group, aggregate your findings and write a letter to the Director of Education. In this letter, you should**
+
+  - reflect on whether you think AI tools create inequalities with respect to grading of student's work
+  - argue both the perceived potential for higher/lower learning gains for students, as well as potential for improvement towards the validity of grading of student's work
+  - reflect on whether you think that our current learning goals/course aims are still valid in the light of AI tools
+  - propose any new assessment methodology or procedure that you think would be more suitable for certain courses, learning goals or allow for fairer grading of student's work
+  
+You should aim to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices. Perhaps it is helpful to imagine what you would do if you were the Director of Education.
+
+
+## 3: Hidden Impact
+In the last 3 years, the development of generative artificial intelligence (AI) has taken a steep rise. But AI is no new idea. Ever sinds Alan Turing's seminal lecture on the automatic computing machine [@turing], computer scientists have worked towards the realization of artificial intelligence. Even AI chatbots are not new. In 1966, Joseph Weizenbaum developed the *psychotherapist chatbot* ELIZA [@eliza]. I am not going to give an overview of the history of AI, as others have already created a far better overview than I could ever create - see e.g. [this link](https://toloka.ai/blog/history-of-generative-ai/), [Wikipedia](https://en.wikipedia.org/wiki/Generative_artificial_intelligence) or [this overview](https://bernardmarr.com/a-simple-guide-to-the-history-of-generative-ai/). Bottom line, ever since the development of [GitHub Copilot](https://github.com/features/copilot) in 2021, the field of generative AI has rapidly become accessible to a broader audience. This development has a direct impact on higher education, as the straightforward access for student and teacher populations to generative AI has the potential to impact education, research and policy. Developments in generative AI also have the means to create new opportunities and - unfortunately - new divides.
+
+In this challenge, I would like to focus on the hidden impact of AI tools in education. While the use of AI tools in education is often framed as a positive development, there are also negative consequences that are often overlooked.
+
+### Impact
+There are numerous ways that the increasing use and implementations of AI tools may impact our lives. In this section I will discuss some forms of direct and indirect impact of AI tools on human life. 
+
+#### Ethical impact
+Many people are unaware of the ethical implications of using AI tools, apart from presenting AI-generated work as your own product. AI tools are often trained on data that is biased or incomplete, which can lead to biased or incorrect results. AI tools have demonstrated to yield inaccurate, incomplete or false information. This can happen when the AI tool *perceives* patterns or objects that are nonexistent, resulting in nonsensical or inaccurate output, often referred to as **hallucinations** [@ziwei; @alkaissi2023artificial; @athaluri2023exploring], although some resistance against that term has emerged [@Ostergaard2023]. It is important to always use multiple sources to verify any bit of information. As a user of AI tools you should accept that only you are responsible for using, interpreting and curating AI-generated output. 
+
+The age-old adage *garbage in, garbage out* holds here too: old biases and ideas may unwantedly be perpetuated by AI tools, thereby fueling divides, biases and stereotypes that we have tried so hard to remove.  
+
+#### Legal impact
+Many people are unaware of the legal implications of using AI tools. AI tools are often trained on data that is copyrighted or patented, which can lead to legal issues if the data is used without permission. To avoid such issues, when interacting with AI tools, users should protect intellectual property rights and copyright. When submitting prompts as **input to AI tools** it is paramount to ensure that
+
+- you are allowed to share the information in the prompt or have explicit permission
+- you are not infringing on any right associated with the information in the prompt
+
+Likewise, it is important to realize that no intellectual property or copyright may be infringed with using the **output of the AI tool**. The training of the AI tool happened on a large set of data; some of that data may have been used illegitimately. By using AI generated output you may plagiarize existing work or otherwise infringe on intellectual property rights.
+
+This is a tricky scenario, as the nontransparent training of AI tools makes it challenging to prove that no IP is infringed with the realized output. However, one could argue that embedding AI tools in a normal scientific knowledge discovery scenario would minimize the change of any infringement. Such a route would result in a process where information from multiple sources is processed and curated by an actual human.
+
+#### Environmental impact
+Many users are unaware of the impact that contemporary AI tools may have on the environment. Together with e.g. cloud storage and e-mail traffic, AI tools constitute a *hidden carbon footprint* that often escapes our awareness. While it is not as apparent as airline travel, the impact of using AI tools may be far greater than you think and decarbonizing the energy usage alone is not enough to sustainably implement AI tools in our everyday life [@berthelot2023]. It is estimated that using generative AI Tools currently accounts for up to 25 times the energy emissions that are generated from training the models [@chien2023]. While the environmental impact can ultimately be significantly lowered by moving from server-based generative AI to on-chip generative AI, there will always be a cost of using AI tools. Many people have thought about how AI will impact human life and Hollywood has monetized its threat to human existence. Not many may have realized that our lives may currently be at risk through AI-induced global warming.
+
+#### Social impact
+In recent years many idealistic promises have been made about the potential of AI to improve human life. Widespread access for everyone to AI models and tools has been said to contribute to equality, allowing everybody to access high quality information and interact witht the same technology. This widespread access, however, also allows for non-just purposes. AI tools are neutral and can be used to harm people and spread misinformation. AI tools can be used to manipulate people, to deepen existing biases, to incite hate speech or to discriminate against people, evidence of which has been found in the use of AI tools in hiring processes and the potential for election manipulation [@baldassarre2023; @lyttonAIHiringTools2024; @aliswensonElectionDisinformationTakes2024; @mekelapanditharatneHowAIPuts2023]. Aside from the potential for AI to incite societal harm on a fundamental level, it can also disrupt society on a more existential level. The widespread use of AI tools may lead to a loss of jobs, as AI tools can automate tasks that were previously done by humans. This can lead to a loss of income and a decrease in the quality of life for many people. The zeitgeist of contemporary AI tools pairs a strong call for regulatory action with a warning for over-regulation. 
+
+
+#### Human rights and labor rights
+There is [evidence](https://time.com/6247678/openai-chatgpt-kenya-workers/) that the workers who curate these models are treated unfairly or even inhumanely by their employers. This [interview](https://blogs.lse.ac.uk/businessreview/2024/03/25/madhumita-murgia-ai-can-do-harm-when-people-dont-have-a-voice/) also paints a good picture of how and where AI work can harm people. This means that the use of AI tools may not only effect the networks of the people who use them, but also have an effect on the people who curate the models behind these tools. 
+
+### Definition of Challenge
+In this challenge I would like to invite you to reflect on the hidden impact of AI tools in higher education. The aim of this challenge is to raise awareness of the potential negative consequences of using AI tools in education and to encourage you to think critically about the ethical, legal, environmental, social, and human rights implications of using AI tools.
+
+**1. Discuss the above impact domains in your group. Let the following talking points guide your discussion.**
+
+a. Where do you see potential in your daily work for AI tools to have either a positive or a negative impact on your life?
+b. How do you think AI tools can be used to improve your daily work?
+c. Do you think that AI tools can be used to harm people or spread misinformation? Do you have examples of that happening?
+d. Do you use AI tools in your daily work? Why do you (not) use them?
+e. Are there ways to mitigate the above outlined potential negative consequences of using AI tools in your daily work?
+f. Do you feel that the responsibility of mitigating the potential negative consequences of using AI tools lies with the individual user, the organization, or the government?
+g. Do you feel that the positive benefits of AI tools outweigh the potential negative consequences?
+h. Would your answer to the previous question change if you consider the current state of AI tools als a transition phase to a more advanced state where all negative impact is mitigated?
+i. Do you think that our university should take action to mitigate the potential negative consequences of using AI tools in education? If so, what actions do you think the university should take?
+j. Do you think that the potential negative consequences of using AI tools in education are being adequately addressed by the university? If not, what do you think the university should do to address these consequences?
+
+**2. After discussing these questions, write a letter to the UU Executive board. In this letter, you should:**
+
+a. Start with the potential positive impact of AI tools in society in general and education in particular
+b. Reflect on the potential negative consequences of using AI tools in our institution, highlighting the respective domain impact as discussed in your group
+c. Argue whether you think the university should take action to mitigate these consequences
+d. Propose any actions that you think the university should take to mitigate the potential negative consequences of using AI tools in education
+
+Try to write the letter in a critical but constructive manner. It is more helpful to guide a call for action with examples and proposals, then to criticize current practices or lack thereof. Perhaps it is helpful to imagine what you would find most helpful to motivate yourself to act if you were a member of the Executive Board.
+
+:::
